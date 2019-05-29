@@ -1,5 +1,12 @@
 body
-  font-family: sans-serif
+  font-family: 'Museo Sans Light', sans-serif
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 17px 30px
+    &:focus
+      outline: none
 img
   max-width: 100%
 .container
@@ -8,6 +15,13 @@ img
 @media (max-width: 1200px)
   .container
     width: 760px
+  .button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 17px 30px
+    &:focus
+      outline: none
 @media (max-width: 768px)
   .container
     max-width: 580px
@@ -15,11 +29,11 @@ img
 @media (max-width: 567px)
   .container
     width: 320px
-.button
-  border-radius: 10px
-  background-color: $main-color
-  border: none
-  padding: 17px 30px
-  margin-right: 2px
-  &:focus
-    outline: none
+  .button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 17px 30px
+    &:focus
+      outline: none
+ 
