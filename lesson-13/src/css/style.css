@@ -144,10 +144,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 13px;
+  margin-bottom: 5px;
 }
 
 .navbar__button {
-  margin-left: 30px;
   font-family: 'Museo Sans Bold';
 }
 
@@ -156,8 +156,11 @@ img {
   color: #333333;
   font-size: 20px;
   text-decoration: none;
-  margin-top: 5px;
   font-family: 'Museo Sans Bold';
+}
+
+.navbar__contacts {
+  margin-right: 30px;
 }
 
 @media (max-width: 768px) {
@@ -418,6 +421,10 @@ img {
 .offer__input {
   margin-bottom: 35px;
   width: 240px;
+}
+
+.offer__input:focus {
+  outline-color: orange;
 }
 
 .offer__input:first-child {
