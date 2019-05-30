@@ -1,46 +1,52 @@
 .hero
+  background-color: $secondary
   &-image
     padding-left: 21px
-  &-block
+  &__inner
     display: flex
     justify-content: space-between
-  &-text
+    padding-top: 50px
+    padding-bottom: 30px
+  &__text
     flex-basis: 50%
     padding-top: 25px
-    &__title
-      font-size: 41px
-      line-height: 55px
-      margin-bottom: 32px
-      margin-top: 0
-      font-family: 'Museo Sans Bold'
-    &__subtitle
-      display: inline-block
-      font-size: 20px
-      margin-bottom: 68px
-      font-family: 'Museo Sans Bold'
-  &-list
-    margin: 0
-    padding: 0
-    &__item
-      display: flex
-      align-items: center
-      margin-bottom: 25px
-    &__image
-      width: 40px
-      height: 40px
-      border: 2px solid $main-color
-      display: flex
-      align-items: center
-      justify-content: center
-      border-radius: 50%
-      margin-right: 28px
-    &__text
-      max-width: 250px
-      font-size: 14px
+  &__title
+    font-size: 41px
+    line-height: 55px
+    margin-bottom: 32px
+    margin-top: 0
+    font-family: 'Museo Sans Bold'
+  &__subtitle
+    display: inline-block
+    font-size: 20px
+    margin-bottom: 70px
+    font-family: 'Museo Sans Bold'
+.features
+  margin: 0
+  padding: 0
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 25px
+    line-height: 24px
+    &:last-child
+      margin-bottom: 0
+  &__image
+    width: 40px
+    height: 40px
+    border: 2px solid $main-color
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    margin-right: 28px
+  &__text
+    max-width: 250px
+    font-size: 14px
 @media (max-width: 1200px)
   .hero
     padding: 50px 0
-    &-block
+    &__inner
       flex-direction: column
     &-list
       margin-bottom: 44px
@@ -48,21 +54,22 @@
       padding-right: 10px
 @media (max-width: 768px)
   .hero
-    &-text
-      &__title
-        font-size: 24px 
-        line-height: 1.4
-        margin-bottom: 15px
-      &__subtitle
-        font-size: 16px
-        margin-bottom: 28px
-    &-list
-      &__item
-        margin-bottom: 20px
-      &__text
-        font-size: 12px
-      &__image
-        margin-right: 15px
+    &__text
+    &__title
+      font-size: 24px 
+      line-height: 1.4
+      margin-bottom: 15px
+    &__subtitle
+      font-size: 16px
+      margin-bottom: 28px
+  .features
+    margin-bottom: 44px
+    &__item
+      margin-bottom: 20px
+    &__text
+      font-size: 12px
+    &__image
+      margin-right: 15px
 @media (max-width: 567px)
   .hero
     display: flex
@@ -70,14 +77,15 @@
     padding-left: 15px
     &-image
       padding-left: 0
-    &-text
-      &__subtitle
-        margin-bottom: 20px
-      &__title
-        margin-bottom: 5px
-    &-list
-      &__text
-        max-width: 200px
-        &__subtitle
-          margin-bottom: 22px
+    &__text
+    &__subtitle
+      margin-bottom: 20px
+    &__title
+      margin-bottom: 5px
+  .features
+    margin-bottom: 44px
+    &__text
+      max-width: 200px
+    
+    
      
