@@ -88,17 +88,7 @@ img {
 }
 
 .section {
-  padding: 75px 0;
-}
-
-.section-title {
-  font-size: 24px;
-  font-family: 'Museo Sans Bold';
-}
-
-.section-subtitle {
-  display: block;
-  font-size: 16px;
+  padding: 65px 0;
 }
 
 .input {
@@ -415,11 +405,15 @@ img {
   line-height: 35px;
   margin-bottom: 20px;
   margin-top: 0;
+  font-size: 24px;
+  font-family: 'Museo Sans Bold';
 }
 
 .offer__subtitle {
   max-width: 260px;
   margin-bottom: 30px;
+  display: block;
+  font-size: 16px;
 }
 
 .offer__input {
