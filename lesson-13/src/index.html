@@ -21,7 +21,7 @@
           <span class="navbar__address">Калуга, Москва, МО</span>
           <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
         </div>
-        <button class="button navbar__button">Перезвонить мне</button>
+        <button class="button navbar__button" id="button">Перезвонить мне</button>
       </div>
     </div>
     </div>
@@ -61,15 +61,15 @@
             </li>
           </ul>
         </div>
-        <div class="hero-image">
-          <img src="img/hero-image.png" alt="План квартиры" class="hero-image">
+        <div class="hero__image">
+          <img src="img/hero-image.png" alt="План квартиры">
         </div>
       </div>
     </div>
   </section>
   <section class="offer section">
     <div class="container">
-      <div class="offer-block">
+      <div class="offer__block">
           <h2 class="section-title offer__title">
               Мы бесплатно разработаем 
               дизайн-проект Вашего жилья 
@@ -79,9 +79,9 @@
               Оставьте заявку на разработку 
               бесплатного дизайн-проекта!
             </span>
-            <form action="#" class="form offer__form">
-              <input type="text" class="input offer__input" placeholder="Ваше имя">
-              <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+            <form class="form offer__form" action="#">
+              <input class="input offer__input" type="text" placeholder="Ваше имя">
+              <input class="input offer__input" type="tel" placeholder="Ваш телефон">
               <button class="button offer__button">
                   Получить бесплатный дизайн-проект
               </button>
@@ -99,5 +99,15 @@
     </div>
   </section>
 </main>
+
+<div class="modal" id="modal">
+  <div class="modal-dialog">
+    <button class="modal-dialog__close" id="close">&times;</button>
+    <h4 class="modal-dialog__title">Всплывающее окно</h4>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>

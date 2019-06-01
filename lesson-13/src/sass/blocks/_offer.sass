@@ -11,7 +11,9 @@
     top: 0
     left: 0
     background-color: #fff
-  &-block
+  &__form
+    margin-bottom: 25px
+  &__block
     width: 50%
     padding-right: 90px
     position: relative
@@ -36,13 +38,13 @@
     margin-bottom: 35px
     width: 240px
     &:focus
-      outline-color: orange
+      outline: none
+      border: 1px solid orange
     &:first-child
       margin-right: 10px
   &__button
     width: 100%
     min-height: 70px
-    margin-bottom: 25px
     font-family: 'Museo Sans Bold'
     font-size: 16px
   
@@ -65,7 +67,7 @@
 @media (max-width: 768px)
   .offer
     background: #fff
-    &-block
+    &__block
       width: 100%
       padding-right: 0
     &-contact 
@@ -79,7 +81,7 @@
 @media (max-width: 576px)
   .offer
     background: #fff
-    &-block
+    &__block
       width: 100%
       padding-right: 0
     &-contact

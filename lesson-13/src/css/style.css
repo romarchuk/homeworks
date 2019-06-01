@@ -219,7 +219,7 @@ img {
   background-color: #f5f5f5;
 }
 
-.hero-image {
+.hero__image {
   padding-left: 21px;
 }
 
@@ -347,7 +347,7 @@ img {
     padding-top: 15px;
     padding-left: 15px;
   }
-  .hero-image {
+  .hero__image {
     padding-left: 0;
   }
   .hero__subtitle {
@@ -381,7 +381,11 @@ img {
   background-color: #fff;
 }
 
-.offer-block {
+.offer__form {
+  margin-bottom: 25px;
+}
+
+.offer__block {
   width: 50%;
   padding-right: 90px;
   position: relative;
@@ -424,7 +428,8 @@ img {
 }
 
 .offer__input:focus {
-  outline-color: orange;
+  outline: none;
+  border: 1px solid orange;
 }
 
 .offer__input:first-child {
@@ -434,7 +439,6 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
-  margin-bottom: 25px;
   font-family: 'Museo Sans Bold';
   font-size: 16px;
 }
@@ -470,7 +474,7 @@ img {
   .offer {
     background: #fff;
   }
-  .offer-block {
+  .offer__block {
     width: 100%;
     padding-right: 0;
   }
@@ -494,7 +498,7 @@ img {
   .offer {
     background: #fff;
   }
-  .offer-block {
+  .offer__block {
     width: 100%;
     padding-right: 0;
   }
@@ -512,5 +516,37 @@ img {
   .offer-contact__tel {
     max-width: 70%;
   }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
