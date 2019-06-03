@@ -93,6 +93,9 @@ img {
 
 .section-title {
   text-align: center;
+  font-size: 30px;
+  font-family: 'Museo Sans Bold';
+  color: #333333;
 }
 
 .section-slider {
@@ -570,6 +573,7 @@ img {
   display: none;
   text-indent: -9999px;
   background: url("../img/icon_top.png") no-repeat;
+  z-index: 1;
 }
 
 .portfolio {
@@ -578,7 +582,7 @@ img {
 }
 
 .portfolio__title {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   margin-bottom: 100px;
 }
