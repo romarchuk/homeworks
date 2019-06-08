@@ -1,0 +1,69 @@
+*
+  box-sizing: border-box
+body
+  font-family: 'Museo Sans Light', sans-serif
+  margin: 0
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 17px 30px
+    &:focus
+      outline: none
+    &:hover
+      background-color: lighten($main-color, 10%)
+      cursor: pointer
+img
+  max-width: 100%
+  display: block
+.container
+  width: 1170px
+  margin: auto
+@media (max-width: 1200px)
+  .container
+    width: 760px
+  .button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 17px 30px
+    &:focus
+      outline: none
+@media (max-width: 768px)
+  .container
+    max-width: 580px
+    width: 95%
+@media (max-width: 567px)
+  .container
+    width: 320px
+  .button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 17px 30px
+    &:focus
+      outline: none
+.section
+  padding: 65px 0
+  &-title
+    text-align: center
+    font-size: 30px
+    font-family: 'Museo Sans Bold'
+    color: #333333
+  &-subtitle
+    font-size: 20px
+    font-family: 'Museo Sans Light'
+  &-slider
+    padding-top: 100px
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
+.slider
+  &__image
+    margin: auto
